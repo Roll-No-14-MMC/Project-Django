@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+class StudentView:
+    @staticmethod
+    def postStudent(request):
+        data = request.data
+        print(data)
+
