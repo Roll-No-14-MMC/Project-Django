@@ -1,14 +1,13 @@
-from .models import Student
-from .models import Teacher
+from .models import Student, Teacher
 from rest_framework import serializers
 
 # To change the requested info into JSON format
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
-        field = '__all_'
+        fields = '__all__'
 
 class TeacherSerializer(serializers.ModelSerializer):
     class Meta:
         model = Teacher
-        field = '__all_'
+        fields = '__all__'
