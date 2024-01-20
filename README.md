@@ -17,3 +17,5 @@
 > make a serializer.py file inside app<br>
 > create serializer for user<br>
 > inside views.py of the app import serializer(that we made) and response(rest_framework.response) and api_view(rest_framework.decorators)<br>
+
+# https://www.eraser.io/
