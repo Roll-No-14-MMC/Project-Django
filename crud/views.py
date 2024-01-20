@@ -74,7 +74,7 @@ def oneTeacher(request,id):
     except Exception as e:
         return Response(f'error: {e}')
 
-@api_view(['POST'])
+@api_view(['GET'])
 def editStudnet(request,id):
     try:
         response = Student.objects.get(id=id)
